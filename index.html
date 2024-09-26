@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Realm</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo da Plataforma" id="logo">
+        <h1>Retro Realm</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Pesquisar game...">
+            <svg viewBox="0 0 24 24" class="search__icon" onclick="searchGame()">
+                <g>
+                    <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                </g>
+            </svg>
+        </div>
+        <button onclick="showSignup()">Cadastrar</button>
+    </header>
+
+   
+    <main>
+        <div id="signup-form" class="hidden">
+            <h2>Cadastro</h2>
+            <form id="form">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+
+        <section id="games-list">
+            <div class="game-item">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/d/d3/Grand_Theft_Auto_San_Andreas_capa.png?20170107170529" alt="Game 1">
+                <h3>GTA San Andreas</h3>
+                
+               
+                <a href=https://www.mediafire.com/file/axz2l2di1m9k4j6/GTA_San_Andreas.rar/file"
+                class="download-button">Download</a>
+            </div>
+            <div class="game-item">
+                <img src="https://geekgamer-capas.nyc3.cdn.digitaloceanspaces.com/ntqqk9u0.jpg" alt="Game 2">
+                <h3>Resident Evil 4</h3>
+                
+                
+                <a href=https://drive.google.com/file/d/1y3Dy_Afhy3ctHAirirrsuSOxOSMkStNZ/view?usp=sharing"
+                class="download-button">Download</a>
+            </div>
+            <div class="game-item">
+                <img src="https://play-lh.googleusercontent.com/S8pZ6vpv6--3bNrmPi7-IYvp9xxgNoGC37NN5eWNK4OMpBQHeJ29UktMVLh5MYyLWkE" alt="Game 3">
+                <h3>Metal Slug</h3>
+                
+                
+                <a href=https://www.mediafire.com/file/sdwrzwrhp61yav0/METAL.SLUG.4-Unleashed.zip/file"
+                 class="download-button">Download</a>
+            </div>
+            <div class="game-item">
+                <img src="https://wallpaper.forfun.com/fetch/94/945de97764070eb562979d4f3a06b252.jpeg" alt="Game 4">
+                <h3>Left4 Dwad2</h3>
+               
+               
+                <a href=https://drive.google.com/file/d/13cBDZa82rE_Xk5fos6BqShXOhMrj9oSz/view?usp=sharing"
+                 class="download-button">Download</a>
+
+            </div>
+            <div class="game-item">
+                <img src="https://howlongtobeat.com/games/30385_Undertale.png" alt="Game 5">
+                <h3>Undertale</h3>
+                
+                <a href=https://www.mediafire.com/file/xaqah8uzzxlhtwu/Undertale_Sin_Virus.rar/file"
+                 class="download-button">Download</a>
+               
+            </div>
+            <div class="game-item">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Hollow_Knight_first_cover_art.webp/274px-Hollow_Knight_first_cover_art.webp.png" alt="Game 6">
+                <h3>Hollow Knight</h3>
+                
+                <a href=https://www.mediafire.com/file/1jpsk53809qwdk4/Hollow_Knight_Para_Canaima_Sin_Virus.zip/file"
+                 class="download-button">Download</a>
+
+            </div>
+            
+        </section>
+
+        <section id="about">
+            <h2>Sobre a Plataforma</h2>
+            <p>Bem-vindo à nossa plataforma de jogos clássicos! Aqui, você pode explorar e baixar uma seleção dos seus jogos favoritos de épocas passadas. Reviva suas memórias e descubra títulos icônicos que marcaram a história dos videogames. Aproveite!</p>
+
+        </section>
+
+        <section id="developer">
+            <h2>Desenvolvido por Guilherme Gonçalves</h2>
+            <div class="developer-container">
+                <div class="developer-info">
+                    <img src="images/perfil.PNG" alt="Sua Foto" class="developer-photo">
+                    <div class="social-icons">
+                        <a href="https://wa.me/+5534998776739" target="_blank">
+                            <img src="images/whatsapp.png" alt="WhatsApp" class="contact-icon">
+                        </a>
+                        <a href="https://www.instagram.com/guilherme.goncalvessz/" target="_blank">
+                            <img src="images/instagram.png" alt="Instagram" class="contact-icon">
+                        </a>
+                        <a href="https://twitter.com/seu-usuario" target="_blank">
+                            <img src="images/twitter.png" alt="Twitter" class="contact-icon">
+                        </a>
+                    </div>
+                </div>
+                <p>Sou desenvolvedor web autônomo e criei esta plataforma para despertar memórias antigas e reviver momentos especiais. Meu objetivo é simplificar a busca por jogos clássicos, tornando mais fácil para todos acessá-los. Espero que você aproveite sua experiência!</p>
+            </div>
+        </section>
+        
+        
+        
+
+    <footer>
+        <p>&copy; 2024  Retro Realm. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
